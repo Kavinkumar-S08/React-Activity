@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGIN */
+.login-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 40px;
+  width: 380px;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.login-title {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+.error-msg {
+  color: #ff8080;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #00e0ff;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 15px #00e0ff;
+}
+
+/* DASHBOARD */
+.dashboard-header {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-circle {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #444;
+}
+
+.logout-btn {
+  padding: 8px 18px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard-box {
+  text-align: center;
+  padding: 40px;
+  width: 700px;
+  margin-top: 70px;
+}
+
+.dashboard-title {
+  color: white;
+  font-size: 32px;
+}
+
+.history-title {
+  margin-top: 25px;
+  color: #dffaff;
+}
+
+.history-list {
+  margin-top: 20px;
+}
+
+.history-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 14px;
+  margin: 10px auto;
+  width: 65%;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.4);
+}
+
+/* Animations */
+.fade-in {
+  animation: fade 1s ease;
+}
+
+.pop-in {
+  animation: pop 0.6s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
